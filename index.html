@@ -5,48 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Carmen Llorente</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #cabecera {
+            width: 70%;
+            flex-shrink: 0;
+        }
+
+        #avatar {
+            width: 30%;
+            max-width: 80%; /* La imagen no será más ancha que el 100% del contenedor */
+            flex-shrink: 0;
+            align-self: flex-start; /* Alinea el avatar arriba */
+        }
+
+        #cabecera,
+        #avatar {
+            align-self: flex-start; /* Alinea los elementos al principio */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #cuerpo_CV {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Carmen Llorente</h1>
-        <img src="img/avatar_240.png" alt="Foto de perfil">
-    </header>
+    <div id="container">
+        <div id="avatar">
+            <img width="140" src="img/avatar_240.png" alt="Foto de perfil" style="max-height: 100%;">
+        </div>
+        <div id="cabecera">
+            <h2>Mª del Carmen Llorente Benedicto</h2>
+            <p>Maestra && SysOP && Whitehat hacker
+            <p><b>Tel:</b> 659078830</p>
+            <p><b>E-mail:</b> carmen@securityadviser.org</p>    
+        </div>
+    </div>
+    <div id="cuerpo_CV">
+        <!-- GitHub Profile-Views Counter-->
+        <p align="left"> <img src="https://komarev.com/ghpvc/?username=carmenllorenteb&color=blue&style=plastic" alt="CokeSaeba" />  </p>
+        <br>
+        <a href="https://www.linkedin.com/in/spanishwithcarmen/">
+            <img align="left" style="margin-right: 10px;" alt="Carmen's LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+        </a>
+        
+        <a href="https://github.com/carmenllorenteb">
+            <img align="left" alt="Carmen's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
+        </a>
+        
+        <br>
+        <br>
+        <div style="display: flex; align-items: center;">
+            <a href="https://primal.net/p/npub182eksedpe79m7f26h4kdnmx2trtz5exhtxrtathc8cnn4ufln06qxmeat7" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="img/nostr_x32.png" style="margin-right: 8px;">
+                <b> Public key: </b><code>npub182eksedpe79m7f26h4kdnmx2trtz5exhtxrtathc8cnn4ufln06qxmeat7</code>
+            </a>
+        </div>
+        
+        <br>
+        <br>
+        
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li>
+                <h3>Nombre del trabajo</h3>
+                <p>Descripción del trabajo, responsabilidades, logros, etc.</p>
+            </li>
+            <!-- Más elementos <li> para cada trabajo -->
+        </ul>
 
-    <main>
-        <section>
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                <li>
-                    <h3>Nombre del trabajo</h3>
-                    <p>Descripción del trabajo, responsabilidades, logros, etc.</p>
-                </li>
-                <!-- Puedes añadir más elementos <li> para cada trabajo -->
-            </ul>
-        </section>
+        <h2>Educación</h2>
+        <ul>
+            <li>
+                <h3>Nombre del título o curso</h3>
+                <p>Detalles adicionales: institución, fecha de graduación, etc.</p>
+            </li>
+            <!-- Más elementos <li> para cada título o curso -->
+        </ul>
 
-        <section>
-            <h2>Educación</h2>
-            <ul>
-                <li>
-                    <h3>Nombre del título o curso</h3>
-                    <p>Detalles adicionales: institución, fecha de graduación, etc.</p>
-                </li>
-                <!-- Puedes añadir más elementos <li> para cada título o curso -->
-            </ul>
-        </section>
+        <h2 style="text-align: left;">Habilidades</h2>
+        <div style="text-align: center;">
+            <img src="img/python.svg" alt="python" style="vertical-align:top; margin:4px">
+            <img width="88" src="img/linux.svg" alt="linux" style="vertical-align:top; margin:4px">
+            <img src="img/visualstudiocode.svg" alt="vscode" style="vertical-align:top; margin:4px">
+            <img width="88" src="img/sql.svg" alt="SQL" style="vertical-align:top; margin:4px">
+        </div>
 
-        <section>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Competencia 1</li>
-                <li>Competencia 2</li>
-                <!-- Añade más habilidades -->
-            </ul>
-        </section>
-    </main>
+        
 
-    <footer>
-        <p>Contacto: carmen@example.com | Teléfono: 123-456-7890</p>
-    </footer>
+    </div>
 </body>
 </html>
